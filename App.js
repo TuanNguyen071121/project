@@ -4,16 +4,18 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import ViewImageScreen from './screen/ViewImageScreen';
 import WelcomeScreen from './screen/Welcomescreen';
+import Onboarding from './screen/onboarding';
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="WelcomeScreen">
-        <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="ViewImageScreen" component={ViewImageScreen} options={{ headerShown: false }} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    // <NavigationContainer>
+    //   <Stack.Navigator initialRouteName="WelcomeScreen">
+    //     <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} options={{ headerShown: false }} />
+    //     <Stack.Screen name="ViewImageScreen" component={ViewImageScreen} options={{ headerShown: false }} />
+    //   </Stack.Navigator>
+    // </NavigationContainer>
+    <Onboarding/>
   );
 }
